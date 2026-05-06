@@ -34,10 +34,14 @@ display:block;
 #home{
 position:relative;
 background:#000;
+}
+
+#home.show{
+display:flex;
 justify-content:center;
 align-items:center;
 }
-
+  
 .neon{
 position:absolute;
 border-radius:50%;
@@ -73,10 +77,11 @@ left:18%;bottom:25%;
 position:relative;
 z-index:5;
 background:#fff;
-padding:40px;
+padding:40px 32px;
 border-radius:28px;
 text-align:center;
-min-width:280px;
+width:280px;
+max-width:85vw;
 }
 
 .bubble h1{
@@ -102,12 +107,26 @@ padding:20px 15px 90px;
 
 .brandCard{
 max-width:420px;
-margin:0 auto 18px;
-background:#f5f5f5;
+margin:0 auto 22px;
 padding:18px;
-border-radius:24px;
+border-radius:26px;
 text-align:center;
-box-shadow:0 8px 18px rgba(0,0,0,.08);
+background:linear-gradient(135deg,#111,#222,#111);
+color:white;
+box-shadow:0 10px 25px rgba(0,255,255,.15);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.brandCard img{
+width:100%;
+max-height:220px;
+object-fit:cover;
+border-radius:18px;
+margin-bottom:14px;
+}
+
+.brandCard h2{
+margin-bottom:10px;
 }
 
 .brandCard img{
